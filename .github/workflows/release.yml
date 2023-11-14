@@ -29,5 +29,5 @@ jobs:
         run: npm ci
 
       - name: Publish to GitHub Packages
-        run: npm publish --registry https://npm.pkg.github.com/kbdharun
+        run: npm publish --registry https://npm.pkg.github.com/kbdharun/tldr
 
