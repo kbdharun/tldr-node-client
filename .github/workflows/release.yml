@@ -21,13 +21,13 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Set up npm registry for GitHub Packages
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
+      # Log in to GitHub Packages registry
+      - name: Authenticate with GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" | npm login --registry=https://npm.pkg.github.com --scope=@kbdharun
 
       # Install dependencies
       - name: Install dependencies
         run: npm ci
 
       - name: Publish to GitHub Packages
-        run: npm publish --registry https://npm.pkg.github.com/kbdharun/tldr
-
+        run: npm publish --registry https://npm.pkg.github.com/kbdharun
