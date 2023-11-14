@@ -4,7 +4,7 @@
   "description": "Simplified and community-driven man pages",
   "author": "Romain Prieto",
   "license": "MIT",
-  "repository": "kbdharun/tldr-node-client",
+  "repository": "https://github.com/kbdharun/tldr-node-client",
   "keywords": [
     "man",
     "pages",
