@@ -1,5 +1,5 @@
 {
-  "name": "tldr",
+  "name": "@kbdharun/tldr-node-client",
   "version": "3.4.0",
   "description": "Simplified and community-driven man pages",
   "author": "Romain Prieto",
